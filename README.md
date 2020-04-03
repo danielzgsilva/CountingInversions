@@ -13,4 +13,5 @@ The list of numbers in your input file used must be formatted like so:
 [2 5 6 3 2 6 8
 3 5 6 7 3 2 6 7]
 
-Note the brackets on either end of the list of numbers, however the list must be delimited with spaces, not commas.
+Note the brackets on either end of the list of numbers, however, the list must be delimited with spaces, not commas.
+See test1000.txt in this repo for an example on how to format your test files.
