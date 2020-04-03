@@ -9,7 +9,7 @@ Below is an example of running the program, using input file test1000.txt
 `python count_inversions.py < test1000.txt`
 
 ## Note
-The input file used must be formatted like so:
+The list of numbers in your input file used must be formatted like so:
 [2 5 6 3 2 6 8
 3 5 6 7 3 2 6 7]
 
