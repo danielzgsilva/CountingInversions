@@ -1,8 +1,10 @@
 import sys
 import re
-from timeit import default_timer as timer
-import psutil
-import os
+
+
+# from timeit import default_timer as timer
+# import psutil
+# import os
 
 
 class InversionCounter:
@@ -26,16 +28,16 @@ class InversionCounter:
         return array
 
     def run(self):
-        start = timer()
+        # start = timer()
         inversion_count = self.count_inversions(0, self.n - 1)
 
         print(inversion_count)
 
-        end = timer()
-        print('Execution time: {} seconds'.format(round(end-start, 5)))
+        # end = timer()
+        # print('Execution time: {} seconds'.format(round(end-start, 5)))
 
-        process = psutil.Process(os.getpid())
-        print('Memory usage: {} mb'.format(process.memory_info().rss * 0.000001))
+        # process = psutil.Process(os.getpid())
+        # print('Memory usage: {} mb'.format(process.memory_info().rss * 0.000001))
         return inversion_count
 
     def count_inversions(self, l, r):
@@ -106,7 +108,7 @@ class InversionCounter:
             j += 1
             cur += 1
 
-        self.array[l:r+1] = self.temp[l:r+1]
+        self.array[l:r + 1] = self.temp[l:r + 1]
 
         return count
 
